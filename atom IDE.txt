@@ -1,0 +1,29 @@
+setup atom for python
+
+general package installations:
+	file-icons - for file icons
+	minimaps - for overview looks
+
+python specific package installtions :
+	autocomplete python - for python auto complete
+	python-autopep8 - for auto formating --> in settings need to check format on save
+			- need to also install autopep8 in os python env --> pip install autopep8
+	linter flake8 - to show errors in realtime 
+			- need to also install flake8 in os python env --> pip install flake8
+
+
+atom environment specific changes:
+	- Run python script with different versions 
+		-> search for 'script'
+		-> click 'run option'
+		-> give python installtion path for running the scripts
+		-> save it as profile
+
+		-> for running the script: run with profile
+
+
+atom commands:
+	Ctrl+Shift+p for command pallet
+		
+	
+	

@@ -1,0 +1,54 @@
+Django application flow
+
+start project 
+	django-admin startproject <project_name>
+
+run server (wsgi)
+	python manage.py runserver
+
+start app
+	python manage.py startapp <app_name>
+
+configure django settings
+	add app in installed_apps list 
+	details: debug mode is true 
+		secrate key is visible
+		default database is sqlite3
+
+setup models in app/models.py
+	make migrations => python manage.py makemigrations
+			=> python manage.py migrate
+
+create super user
+	=> python manage.py createsuperuser
+
+setup admin module in apps/admin.py
+	admin.site.register(<Modelclassname>)
+
+provide static and media urls and roots if there are any media files 
+	STATIC_URL
+	STATIC_ROOT
+	MEDIA_URL
+	MEDIA_ROOT
+
+fill in some sample data
+
+create an urls.py file in app package
+	create simple/empty urlpatterns list
+	provide app namespace => app_name='<appname>'	
+
+setup urls.py in project package
+	include app in url function 
+
+create forms file in apps
+	=> from django import forms
+
+create base templates
+	base_login.html
+	base.html => give template tags for active elements, title element
+	base.css
+	base.js
+
+(do not setup user authentications now => it is prefered to do at last)
+setup url() in apps/urls.py package || setup forms in apps/forms.py || setup views in apps/views.py || create related templates ==> all parallely => start from home page
+

@@ -1,0 +1,27 @@
+Python installation:
+	=> apt-get install python
+
+==============================================
+
+pip installation
+	=> python -m pip install -U pip
+
+install virtual env using pip
+	=> pip install virtualenv
+
+make a directory for virtual environment
+	=> mkdir <dirname>
+
+create a virual environment using virtualenv command in the created dir
+	=> virtualenv -p python3 <virtual env name>
+
+activate the virtualenv 
+	=> <virtual env>\scripts\activate
+
+================================================
+
+Django installation:
+	=> pip install django==1.10
+
+start django project using django-admin command line utility
+	=> django-admin startproject <project-name>
