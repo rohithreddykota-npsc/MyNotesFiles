@@ -1,0 +1,24 @@
+using gitignore
+
+Create a gitignore hidden file in git repository dir
+	=>touch .gitignore
+
+add the files to be ignored 
+	=>cat .gitignore
+	#example of files to be ignored
+	dir1/*
+	*.ext
+
+remove cached files
+	=>git rm --cached dir1/* -r
+
+add the files to git repo and commit 
+	=>git commit -am "<message>"
+
+add alias to the remote repo
+	=>git remote add <alias-name> <remote-addr-url>
+
+push the repo to the remote
+	=>git push <alias-name>
+
+give username and passwd
