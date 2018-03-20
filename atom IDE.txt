@@ -2,7 +2,8 @@ setup atom for python
 
 general package installations:
 	file-icons - for file icons
-	minimaps - for overview looks
+	minimaps - for overview codemap
+	platformIO IDE terminal  - for terminal
 
 python specific package installtions :
 	autocomplete python - for python auto complete
